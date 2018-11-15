@@ -1,30 +1,47 @@
 {
   "name": "Portfolio",
   "version": "1.0.0",
-  "description": "Personal portfolio and website.",
+  "description": "My personal website and portfolio.",
   "main": "webpack.config.js",
-  "dependencies": {
-    "babel-loader": "^8.0.4",
-    "cors": "^2.8.4",
-    "css-loader": "^1.0.0",
-    "dotenv": "^6.1.0",
-    "helmet": "^3.14.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.4",
-    "mongodb": "^3.1.8",
-    "nodemon": "^1.18.4",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.22.0",
-    "webpack-cli": "^3.1.2"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server",
+    "build:dev": "webpack -w --mode development",
+    "build": "webpack -w --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plgrazon/Portfolio.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plgrazon/Portfolio/issues"
+  },
+  "homepage": "https://github.com/plgrazon/Portfolio#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "nodemon": "^1.18.6",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "mongodb": "^3.1.9",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
 }
