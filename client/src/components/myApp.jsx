@@ -42,12 +42,31 @@ class App extends Component {
             <li>RESTful API Developemt</li>
           </ul>
           <ul className="testing">
+            <h4>Testing</h4>
             <li>Mocha</li>
             <li>Chai</li>
             <li>Enzyme</li>
             <li>Travis CI</li>
             <li>Artillery</li>
             <li>Loader</li>
+          </ul>
+          <ul className="Deployment">
+            <h4>Deployment</h4>
+            <li>Docker</li>
+            <li>Nginx</li>
+            <li>Amazon Web Services</li>
+          </ul>
+          <ul className="Development">
+            <h4>Development</h4>
+            <li>Git</li>
+            <li>npm</li>
+            <li>Webpack</li>
+            <li>Babel</li>
+          </ul>
+          <ul className="Design">
+            <h4>Design</h4>
+            <li>Adobe CC</li>
+            <li>Adobe Lightroom</li>
           </ul>
         </section>
         <section>
