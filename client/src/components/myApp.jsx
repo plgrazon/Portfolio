@@ -8,6 +8,15 @@ class App extends Component {
   }
 
   render() {
+    let frontEndSkills = [
+      'JavaScript',
+      'React',
+      'HTML5',
+      'CSS3',
+      'CSS Modules',
+      'Styled Components'
+    ];
+
     return (
       <div>
         <section className="heading">
@@ -24,13 +33,9 @@ class App extends Component {
           </p>
           <h1>Skills:</h1>
           <ul className="frontend">
-            <h4>Front-End</h4>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>CSS Modules</li>
-            <li>Styled COmponents</li>
+            {frontEndSkills.map(skill => {
+              return <li>{skill}</li>;
+            })}
           </ul>
           <ul className="backend">
             <h4>Back-End</h4>
