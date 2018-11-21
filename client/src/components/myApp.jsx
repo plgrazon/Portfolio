@@ -16,6 +16,25 @@ class App extends Component {
       'CSS Modules',
       'Styled Components'
     ];
+    let backEndSkills = [
+      'Node.js',
+      'Express',
+      'PostgresSQL',
+      'MongoDB',
+      'MySQL',
+      'RESTful API Development'
+    ];
+    let testing = [
+      'Mocha',
+      'Chai',
+      'Enzyme',
+      'Travis CI',
+      'Artillery',
+      'Loader'
+    ];
+    let deploy = ['Docker', 'Nginx', 'Amazon Web Services'];
+    let dev = ['Git', 'npm', 'Webpack', 'Babel'];
+    let design = ['Adobe CC', 'Adobe Lightroom'];
 
     return (
       <div>
@@ -34,50 +53,62 @@ class App extends Component {
           <h1>Skills:</h1>
           <ul className="frontend">
             {frontEndSkills.map(skill => {
-              return <li>{skill}</li>;
+              return <li key={skill}>{skill}</li>;
             })}
           </ul>
           <ul className="backend">
             <h4>Back-End</h4>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>PostgresSQL</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>RESTful API Developemt</li>
+            {backEndSkills.map(skill => {
+              return <li key={skill}>{skill}</li>;
+            })}
           </ul>
           <ul className="testing">
             <h4>Testing</h4>
-            <li>Mocha</li>
-            <li>Chai</li>
-            <li>Enzyme</li>
-            <li>Travis CI</li>
-            <li>Artillery</li>
-            <li>Loader</li>
+            {testing.map(skill => {
+              return <li key={skill}>{skill}</li>;
+            })}
           </ul>
-          <ul className="Deployment">
+          <ul className="deployment">
             <h4>Deployment</h4>
-            <li>Docker</li>
-            <li>Nginx</li>
-            <li>Amazon Web Services</li>
+            {deploy.map(skill => {
+              return <li key={skill}>{skill}</li>;
+            })}
           </ul>
-          <ul className="Development">
+          <ul className="development">
             <h4>Development</h4>
-            <li>Git</li>
-            <li>npm</li>
-            <li>Webpack</li>
-            <li>Babel</li>
+            {dev.map(skill => {
+              return <li key={skill}>{skill}</li>;
+            })}
           </ul>
-          <ul className="Design">
+          <ul className="design">
             <h4>Design</h4>
-            <li>Adobe CC</li>
-            <li>Adobe Lightroom</li>
+            {design.map(skill => {
+              return <li key={skill}>{skill}</li>;
+            })}
           </ul>
         </section>
-        <section>
+        <section className="projects">
           <h1>Projects</h1>
           <h3>aBay</h3>
           <h3>Welp</h3>
+        </section>
+        <section className="experience">
+          <h1>Experience</h1>
+          <ul>
+            <li>Trilogy</li>
+            <li>Metro Remittance</li>
+            <li>Universal Robina Corporation</li>
+          </ul>
+        </section>
+        <section className="education">
+          <h1>Education</h1>
+          <ul>
+            <li>Hack Reactor</li>
+            <li>De La Salle Univeristy</li>
+          </ul>
+        </section>
+        <section className="contact-info">
+          <h1>Get in touch</h1>
         </section>
       </div>
     );
