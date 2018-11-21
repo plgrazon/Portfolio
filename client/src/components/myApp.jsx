@@ -1,3 +1,4 @@
+import style from '../styles/myApp.css';
 import React, { Component } from 'react';
 
 class App extends Component {
@@ -37,19 +38,28 @@ class App extends Component {
     let design = ['Adobe CC', 'Adobe Lightroom'];
 
     return (
-      <div>
-        <section className="heading">
-          <h3>Paolo Razon</h3>
-          <h1>Software Engineer</h1>
+      <div className="resume-body">
+        <section className={style['bio-info']}>
+          <div className={style.heading}>
+            <h3>Paolo Razon</h3>
+            <h1>Software Engineer</h1>
+          </div>
+          <img
+            className={style['bio-photo']}
+            src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif"
+          />
+          <div className={style['bio-aboutme']}>
+            <h1>About me:</h1>
+            <p>
+              I’m passionate about solving real life problems through building
+              applications. Technology and programming has captivated the whole
+              of me, it lets me transform my ideas and channels my creativity
+              into an application that many can benefit from.
+            </p>
+          </div>
         </section>
-        <section className="bio-info">
-          <h1>About me:</h1>
-          <p>
-            I’m passionate about solving real life problems through building
-            applications. Technology and programming has captivated the whole of
-            me, it lets me transform my ideas and channels my creativity into an
-            application that many can benefit from.
-          </p>
+        <div className={style.clear} />
+        <section className="skills">
           <h1>Skills:</h1>
           <ul className="frontend">
             {frontEndSkills.map(skill => {

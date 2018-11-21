@@ -1,0 +1,17 @@
+.heading {
+  font-size: 30px;
+  text-align: center;
+}
+
+.bio-photo {
+  margin-right: 20px;
+  float: left;
+}
+
+.bio-info {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
