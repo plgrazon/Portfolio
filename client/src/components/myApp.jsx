@@ -38,12 +38,12 @@ class App extends Component {
     let design = ['Adobe CC', 'Adobe Lightroom'];
 
     return (
-      <div className="resume-body">
+      <div>
+        <div className={style.heading}>
+          <h3>Paolo Razon</h3>
+          <h1>Software Engineer</h1>
+        </div>
         <section className={style['bio-info']}>
-          <div className={style.heading}>
-            <h3>Paolo Razon</h3>
-            <h1>Software Engineer</h1>
-          </div>
           <img
             className={style['bio-photo']}
             src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif"
@@ -59,7 +59,7 @@ class App extends Component {
           </div>
         </section>
         <div className={style.clear} />
-        <section className="skills">
+        <section className={style.skills}>
           <h1>Skills:</h1>
           <ul className="frontend">
             {frontEndSkills.map(skill => {

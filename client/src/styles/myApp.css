@@ -1,3 +1,9 @@
+:global body {
+  width: 960px;
+  margin: 0 auto;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
 .heading {
   font-size: 30px;
   text-align: center;
@@ -8,10 +14,15 @@
   float: left;
 }
 
-.bio-info {
-  float: left;
+.bio-aboutme {
+  padding-top: 55px;
 }
 
 .clear {
   clear: both;
+}
+
+.skills {
+  text-align: center;
+  list-style-position: inside;
 }
