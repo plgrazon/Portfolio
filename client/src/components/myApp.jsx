@@ -46,7 +46,7 @@ class App extends Component {
         <section className={style['bio-info']}>
           <img
             className={style['bio-photo']}
-            src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif"
+            src="../../static/profilePhoto copy.jpg"
           />
           <div className={style['bio-aboutme']}>
             <h1>About me:</h1>
@@ -58,51 +58,51 @@ class App extends Component {
             </p>
           </div>
         </section>
-        <div className={style.clear} />
         <section className={style.skills}>
           <h1>Skills:</h1>
-          <ul className="frontend">
+          <ul className={style['skills-frontend']}>
+            <h4>Front-End</h4>
             {frontEndSkills.map(skill => {
               return <li key={skill}>{skill}</li>;
             })}
           </ul>
-          <ul className="backend">
+          <ul className={style['skills-backend']}>
             <h4>Back-End</h4>
             {backEndSkills.map(skill => {
               return <li key={skill}>{skill}</li>;
             })}
           </ul>
-          <ul className="testing">
+          <ul className={style['skills-testing']}>
             <h4>Testing</h4>
             {testing.map(skill => {
               return <li key={skill}>{skill}</li>;
             })}
           </ul>
-          <ul className="deployment">
+          <ul className={style['skills-deployment']}>
             <h4>Deployment</h4>
             {deploy.map(skill => {
               return <li key={skill}>{skill}</li>;
             })}
           </ul>
-          <ul className="development">
+          <ul className={style['skills-development']}>
             <h4>Development</h4>
             {dev.map(skill => {
               return <li key={skill}>{skill}</li>;
             })}
           </ul>
-          <ul className="design">
+          <ul className={style['skills-design']}>
             <h4>Design</h4>
             {design.map(skill => {
               return <li key={skill}>{skill}</li>;
             })}
           </ul>
         </section>
-        <section className="projects">
+        <section className={style['projects']}>
           <h1>Projects</h1>
           <h3>aBay</h3>
           <h3>Welp</h3>
         </section>
-        <section className="experience">
+        <section className={style['experience']}>
           <h1>Experience</h1>
           <ul>
             <li>Trilogy</li>
@@ -110,14 +110,14 @@ class App extends Component {
             <li>Universal Robina Corporation</li>
           </ul>
         </section>
-        <section className="education">
+        <section className={style['education']}>
           <h1>Education</h1>
           <ul>
             <li>Hack Reactor</li>
             <li>De La Salle Univeristy</li>
           </ul>
         </section>
-        <section className="contact-info">
+        <section className={style['contact-info']}>
           <h1>Get in touch</h1>
         </section>
       </div>

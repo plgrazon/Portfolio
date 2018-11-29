@@ -1,5 +1,11 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 :global body {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
@@ -9,17 +15,21 @@
   text-align: center;
 }
 
+.bio-info {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
 .bio-photo {
-  margin-right: 20px;
-  float: left;
+  height: 400px;
 }
 
 .bio-aboutme {
-  padding-top: 55px;
-}
-
-.clear {
-  clear: both;
+  margin-left: 20px;
 }
 
 .skills {
