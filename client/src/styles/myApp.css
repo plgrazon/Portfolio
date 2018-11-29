@@ -20,8 +20,6 @@
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
 }
 
 .bio-photo {
@@ -32,7 +30,33 @@
   margin-left: 20px;
 }
 
-.skills {
+.skills-header {
   text-align: center;
-  list-style-position: inside;
+  width: 960px;
+  margin-bottom: -20px;
+}
+
+.skills {
+  width: 960px;
+  justify-content: center;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap; /* flex-direction flex-wrap */
+  align-items: center; /* cross axis */
+  justify-content: center;
+}
+
+.skills-frontend {
+  width: 320px;
+  align-items: center; /* cross axis */
+}
+
+.skills-backend {
+  width: 320px;
+  align-items: center; /* cross axis */
+}
+
+.skills-testing {
+  width: 320px;
+  align-items: center; /* cross axis */
 }

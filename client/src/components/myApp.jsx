@@ -59,7 +59,7 @@ class App extends Component {
           </div>
         </section>
         <section className={style.skills}>
-          <h1>Skills:</h1>
+          <h1 className={style['skills-header']}>Skills:</h1>
           <ul className={style['skills-frontend']}>
             <h4>Front-End</h4>
             {frontEndSkills.map(skill => {
