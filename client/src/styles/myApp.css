@@ -42,21 +42,54 @@
   display: -webkit-flex;
   display: flex;
   flex-flow: row wrap; /* flex-direction flex-wrap */
-  align-items: center; /* cross axis */
+  /*align-items: center; cross axis*/
   justify-content: center;
 }
 
 .skills-frontend {
-  width: 320px;
-  align-items: center; /* cross axis */
+  width: 33.3%;
+  height: 45%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
 }
 
 .skills-backend {
-  width: 320px;
-  align-items: center; /* cross axis */
+  width: 33.3%;
+  height: 45%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
 }
 
 .skills-testing {
-  width: 320px;
-  align-items: center; /* cross axis */
+  width: 33.3%;
+  height: 45%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
+}
+
+.skills-deployment {
+  width: 33.3%;
+  height: 45%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
+}
+
+.skills-development {
+  width: 33.3%;
+  height: 45%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
+}
+
+.skills-design {
+  width: 33.3%;
+  height: 45%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
 }
