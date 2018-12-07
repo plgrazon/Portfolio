@@ -1,14 +1,19 @@
-* {
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background: #f7f7f7;
 }
 
 :global body {
-  max-width: 960px;
+  /* max-width: 960px; */
   margin: 0 auto;
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
+
+/********************
+  Bio Styling
+********************/
 
 .heading {
   font-size: 30px;
@@ -16,34 +21,41 @@
 }
 
 .bio-info {
-  display: -webkit-flex;
+  margin: 0 auto;
+  padding: 5% 20% 5% 20%;
   display: flex;
-  -webkit-align-items: center;
+  justify-content: center;
   align-items: center;
+  background: #f8b500;
 }
 
 .bio-photo {
   height: 400px;
+  width: 400px;
+  border-radius: 200px;
 }
 
 .bio-aboutme {
-  margin-left: 20px;
+  width: 45%;
+  margin-left: 25px;
+}
+
+/********************
+  Skills Styling
+********************/
+
+.skills {
+  /* width: 960px; */
+  padding: 5% 20% 5% 20%;
+  display: flex;
+  flex-flow: row wrap; /* flex-direction flex-wrap */
+  align-items: center; /* cross axis */
+  justify-content: center;
 }
 
 .skills-header {
   text-align: center;
-  width: 960px;
-  margin-bottom: -20px;
-}
-
-.skills {
-  width: 960px;
-  justify-content: center;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap; /* flex-direction flex-wrap */
-  /*align-items: center; cross axis*/
-  justify-content: center;
+  width: 100%;
 }
 
 .skills-frontend {
@@ -92,4 +104,54 @@
   text-align: center;
   list-style-position: inside;
   padding-left: 0%;
+}
+
+/********************
+  Projects Styling
+********************/
+
+.projects {
+  padding: 5% 20% 5% 20%;
+}
+
+.projects-header,
+.abay-project-header,
+.welp-project-header {
+  text-align: center;
+}
+
+/********************
+  Experience Styling
+********************/
+
+.experience {
+  padding: 5% 20% 5% 20%;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.experience ul {
+  padding-left: 0%;
+}
+
+/********************
+  Education Styling
+********************/
+
+.education {
+  padding: 5% 20% 5% 20%;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.education ul {
+  padding-left: 0%;
+}
+
+/********************
+  Contact Styling
+********************/
+
+.contactInfo {
+  text-align: center;
 }

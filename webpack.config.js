@@ -1,7 +1,7 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const entryPoint = path.resolve(__dirname, 'client/src');
 const outputPoint = path.resolve(__dirname, 'client/dist');
@@ -10,7 +10,7 @@ module.exports = {
   entry: path.resolve(entryPoint, 'index.jsx'),
   output: {
     path: outputPoint,
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -38,15 +38,25 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader:'style-loader'
+            loader: 'style-loader'
           },
           {
-            loader:'css-loader',
+            loader: 'css-loader',
             options: {
+              camelCase: true,
               modules: true,
               localIdentName: '[name]__[local]--[hash:base64:5]',
               sourceMap: true
             }
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
           }
         ]
       }
@@ -54,9 +64,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './static/index.html',
+      template: './client/src/static/index.html',
       filename: 'index.html',
       minify: true
     })
   ]
-}
+};
