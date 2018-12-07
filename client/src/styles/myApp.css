@@ -112,12 +112,21 @@ html {
 
 .projects {
   padding: 5% 20% 5% 20%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background: #f3f3f3;
 }
 
 .projects-header,
 .abay-project-header,
 .welp-project-header {
   text-align: center;
+}
+
+.abay-photo {
+  height: 700px;
+  width: 1100px;
 }
 
 /********************

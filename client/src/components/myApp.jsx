@@ -2,6 +2,7 @@ import style from '../styles/myApp.css';
 import React, { Component } from 'react';
 
 import profilePhoto from '../static/profilePhoto.jpg';
+import abayPhoto from '../static/abayPhoto.png';
 class App extends Component {
   constructor() {
     super();
@@ -116,6 +117,7 @@ class App extends Component {
           <h1 className={style.projectsHeader}>Projects</h1>
           <div className={style.abayProjectHeader}>
             <h3>aBay</h3>
+            <img className={style.abayPhoto} src={abayPhoto} />
           </div>
           <div className={style.welpProjectHeader}>
             <h3>Welp</h3>
