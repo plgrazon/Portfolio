@@ -51,8 +51,8 @@ class App extends Component {
             <h1>About me:</h1>
             <p>
               I’m passionate about solving real life problems through building
-              applications. Technology and programming let me transform my ideas
-              and channel my creativity into an application that many can
+              applications. Programming lets me transform my ideas
+              and channels my creativity into an application that many can
               benefit from.
             </p>
           </div>
