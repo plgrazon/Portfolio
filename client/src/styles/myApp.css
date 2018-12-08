@@ -111,7 +111,7 @@ html {
 ********************/
 
 .projects {
-  /* padding: 5% 20% 5% 20%; */
+  padding: 5%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -119,8 +119,8 @@ html {
 }
 
 .projects-header,
-.abay-project-header,
-.welp-project-header {
+.abay-project,
+.welp-project {
   text-align: center;
 }
 
@@ -129,6 +129,18 @@ html {
   width: 700px;
 }
 
+.abay-skills {
+  padding: 10px;
+}
+
+.abay-paragraph {
+  padding: 0 20% 20px 20%;
+}
+
+.welp-photo {
+  height: 500px;
+  width: 700px;
+}
 /********************
   Experience Styling
 ********************/

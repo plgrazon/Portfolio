@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 
 import profilePhoto from '../static/profilePhoto.jpg';
 import abayPhoto from '../static/abayPhoto.png';
+import welpPhoto from '../static/welpPhoto.png';
+import testingPhoto from '../static/testing.png';
+
 class App extends Component {
   constructor() {
     super();
@@ -51,9 +54,8 @@ class App extends Component {
             <h1>About me:</h1>
             <p>
               I’m passionate about solving real life problems through building
-              applications. Programming lets me transform my ideas
-              and channels my creativity into an application that many can
-              benefit from.
+              applications. Programming lets me transform my ideas and channels
+              my creativity into an application that many can benefit from.
             </p>
           </div>
         </section>
@@ -115,12 +117,29 @@ class App extends Component {
         </section>
         <section className={style.projects}>
           <h1 className={style.projectsHeader}>Projects</h1>
-          <div className={style.abayProjectHeader}>
+          <div className={style.abayProject}>
             <h3>aBay</h3>
             <img className={style.abayPhoto} src={abayPhoto} />
+            <p className={style.abaySkills}>
+              React | NodeJS | Express | Docker | AWS EC2 | AWS S3
+            </p>
+            <p className={style.abayParagraph}>
+              Built a microservice that handles shipping and billing. The
+              microservice is connected to its own database which is PostgreSQL.
+              The component renders dynamically depending on user inputs and
+              with modularity in mind CSS-Modules was used for a seamless
+              integration throughout the app. Deployed to AWS using Docker to
+              make sure the microservice is available to the team and will work
+              on any platform.
+            </p>
           </div>
-          <div className={style.welpProjectHeader}>
+          <div className={style.welpProject}>
             <h3>Welp</h3>
+            <img className={style.welpPhoto} src={welpPhoto} />
+            <p className={style.welpSkills}>
+              AWS | PostgeSQL | MongoDB | Nginx | New Relic
+            </p>
+            <p className={style.welpParagraph} />
           </div>
         </section>
         <section className={style.experience}>
