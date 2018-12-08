@@ -52,7 +52,7 @@ class App extends Component {
             <p>
               I’m passionate about solving real life problems through building
               applications. Technology and programming let me transform my ideas
-              and channels my creativity into an application that many can
+              and channel my creativity into an application that many can
               benefit from.
             </p>
           </div>
