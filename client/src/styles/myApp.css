@@ -9,6 +9,7 @@ html {
   /* max-width: 960px; */
   margin: 0 auto;
   font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: #323b49;
 }
 
 /********************
@@ -30,9 +31,11 @@ html {
 }
 
 .bio-photo {
-  height: 400px;
-  width: 400px;
-  border-radius: 200px;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
 }
 
 .bio-aboutme {
@@ -45,7 +48,6 @@ html {
 ********************/
 
 .skills {
-  /* width: 960px; */
   padding: 5% 20% 5% 20%;
   display: flex;
   flex-flow: row wrap; /* flex-direction flex-wrap */
@@ -59,48 +61,42 @@ html {
 }
 
 .skills-frontend {
-  width: 33.3%;
-  height: 45%;
+  min-width: 33.3%;
   text-align: center;
   list-style-position: inside;
   padding-left: 0%;
 }
 
 .skills-backend {
-  width: 33.3%;
-  height: 45%;
+  min-width: 33.3%;
   text-align: center;
   list-style-position: inside;
   padding-left: 0%;
 }
 
 .skills-testing {
-  width: 33.3%;
-  height: 45%;
+  min-width: 33.3%;
   text-align: center;
   list-style-position: inside;
   padding-left: 0%;
 }
 
 .skills-deployment {
-  width: 33.3%;
-  height: 45%;
+  min-width: 33.3%;
   text-align: center;
   list-style-position: inside;
   padding-left: 0%;
 }
 
 .skills-development {
-  width: 33.3%;
-  height: 45%;
+  min-width: 33.3%;
   text-align: center;
   list-style-position: inside;
   padding-left: 0%;
 }
 
 .skills-design {
-  width: 33.3%;
-  height: 45%;
+  min-width: 33.3%;
   text-align: center;
   list-style-position: inside;
   padding-left: 0%;
@@ -111,7 +107,7 @@ html {
 ********************/
 
 .projects {
-  padding: 5%;
+  padding: 5% 15%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -125,8 +121,9 @@ html {
 }
 
 .abay-photo {
-  height: 500px;
-  width: 700px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
 
 .abay-skills {
@@ -138,9 +135,20 @@ html {
 }
 
 .welp-photo {
-  height: 500px;
-  width: 700px;
+  max-width: 100%;
+  /* max-height: 100%; */
+  height: auto;
+  width: auto;
 }
+
+.welp-skills {
+  padding: 10px;
+}
+
+.welp-paragraph {
+  padding: 0 20% 20px 20%;
+}
+
 /********************
   Experience Styling
 ********************/

@@ -1,7 +1,7 @@
 import style from '../styles/myApp.css';
 import React, { Component } from 'react';
 
-import profilePhoto from '../static/profilePhoto.jpg';
+import profilePhoto from '../static/profilePhotoSquare.jpg';
 import abayPhoto from '../static/abayPhoto.png';
 import welpPhoto from '../static/welpPhoto.png';
 import testingPhoto from '../static/testing.png';
@@ -48,6 +48,14 @@ class App extends Component {
           <h3>Paolo Razon</h3>
           <h1>Software Engineer</h1>
         </div>
+        <nav>
+          <ul>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
         <section className={style.bioInfo}>
           <img className={style.bioPhoto} src={profilePhoto} />
           <div className={style.bioAboutme}>
@@ -139,7 +147,14 @@ class App extends Component {
             <p className={style.welpSkills}>
               AWS | PostgeSQL | MongoDB | Nginx | New Relic
             </p>
-            <p className={style.welpParagraph} />
+            <p className={style.welpParagraph}>
+              Optimized the backend for a legacy code base, benchamarked MongoDB
+              and PostgreSQL to determine which database suits the application.
+              The backend is scaled to handle thousands of requests per second
+              through the implentation of a load balancer and multiple
+              instances. Server routes and database queries were optimized
+              through pooling, indexing, and caching.
+            </p>
           </div>
         </section>
         <section className={style.experience}>
