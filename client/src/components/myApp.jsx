@@ -42,21 +42,29 @@ class App extends Component {
     let dev = ['Git', 'npm', 'Webpack', 'Babel'];
     let design = ['Adobe CC', 'Adobe Lightroom'];
 
+    let idSkills = style.skills;
+
     return (
       <div>
+        <nav className={style.navBar}>
+          <a className={style.navLink} href="#bioInfo">
+            About
+          </a>
+          <a className={style.navLink} href="#skills">
+            Skills
+          </a>
+          <a className={style.navLink} href="#projects">
+            Projects
+          </a>
+          <a className={style.navLink} href="#contactInfo">
+            Contact
+          </a>
+        </nav>
         <div className={style.heading}>
           <h3>Paolo Razon</h3>
           <h1>Software Engineer</h1>
         </div>
-        <nav>
-          <ul>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-        <section className={style.bioInfo}>
+        <section className={style.bioInfo} id="bioInfo">
           <img className={style.bioPhoto} src={profilePhoto} />
           <div className={style.bioAboutme}>
             <h1>About me:</h1>
@@ -67,7 +75,7 @@ class App extends Component {
             </p>
           </div>
         </section>
-        <section className={style.skills}>
+        <section className={style.skills} id="skills">
           <h1 className={style.skillsHeader}>Skills:</h1>
           <ul className={style.skillsFrontend}>
             <h4>Front-End</h4>
@@ -123,7 +131,7 @@ class App extends Component {
             })}
           </ul>
         </section>
-        <section className={style.projects}>
+        <section className={style.projects} id="projects">
           <h1 className={style.projectsHeader}>Projects</h1>
           <div className={style.abayProject}>
             <h3>aBay</h3>
@@ -159,11 +167,15 @@ class App extends Component {
         </section>
         <section className={style.experience}>
           <h1>Experience</h1>
-          <ul>
-            <li>Trilogy</li>
-            <li>Metro Remittance</li>
-            <li>Universal Robina Corporation</li>
-          </ul>
+          <div>
+            <h3>Trilogy</h3>
+          </div>
+          <div>
+            <h3>Metro Remittance</h3>
+          </div>
+          <div>
+            <h3>Universal Robina Corporation</h3>
+          </div>
         </section>
         <section className={style.education}>
           <h1>Education</h1>
@@ -172,7 +184,7 @@ class App extends Component {
             <li>De La Salle Univeristy</li>
           </ul>
         </section>
-        <section className={style.contactInfo}>
+        <section className={style.contactInfo} id="contactInfo">
           <h1>Get in touch</h1>
         </section>
       </div>
