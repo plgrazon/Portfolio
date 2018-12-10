@@ -65,10 +65,12 @@ class App extends Component {
           <h1>Software Engineer</h1>
         </div>
         <section className={style.bioInfo} id="bioInfo">
-          <img className={style.bioPhoto} src={profilePhoto} />
+          <div>
+            <img className={style.bioPhoto} src={profilePhoto} />
+          </div>
           <div className={style.bioAboutme}>
             <h1>About me:</h1>
-            <p>
+            <p className={style.bioParagraph}>
               I’m passionate about solving real life problems through building
               applications. Programming lets me transform my ideas and channels
               my creativity into an application that many can benefit from.

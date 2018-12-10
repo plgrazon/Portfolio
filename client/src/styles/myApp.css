@@ -8,6 +8,7 @@ html {
 :global body {
   /* max-width: 960px; */
   margin: 0 auto;
+  border: 20px;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   color: #323b49;
 }
@@ -38,15 +39,17 @@ html {
 
 .bio-info {
   margin: 0 auto;
-  padding: 5% 20% 5% 20%;
+  padding: 5% 15% 5% 15%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   background: #f8b500;
 }
 
 .bio-photo {
-  max-height: 100%;
+  /* margin: 20px; */
+  /* max-height: 100%; */
   max-width: 100%;
   height: auto;
   width: auto;
@@ -54,8 +57,26 @@ html {
 }
 
 .bio-aboutme {
-  width: 45%;
-  margin-left: 25px;
+  /* width: 30%; */
+  padding: 20px;
+  /* margin-left: 25px; */
+  max-width: 50%;
+}
+
+.bio-paragraph {
+  /* padding: 0; */
+  min-width: 200px;
+  /* width: 500px; */
+  font-size: 18px;
+  /* justify-content: flex-start; */
+}
+
+@media screen and (max-width: 375px) {
+  .bio-paragraph {
+    width: 300px;
+    text-align: center;
+    margin-left: -80px;
+  }
 }
 
 /********************
@@ -64,6 +85,7 @@ html {
 
 .skills {
   padding: 5% 20% 5% 20%;
+  min-width: 200px;
   display: flex;
   flex-flow: row wrap; /* flex-direction flex-wrap */
   align-items: baseline; /* cross axis */
@@ -146,7 +168,7 @@ html {
 }
 
 .abay-paragraph {
-  padding: 0 20% 20px 20%;
+  padding: 0 10% 20px 10%;
 }
 
 .welp-photo {
@@ -161,7 +183,7 @@ html {
 }
 
 .welp-paragraph {
-  padding: 0 20% 20px 20%;
+  padding: 0 10% 20px 10%;
 }
 
 /********************
