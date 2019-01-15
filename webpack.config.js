@@ -2,6 +2,8 @@ const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const entryPoint = path.resolve(__dirname, 'client/src');
 const outputPoint = path.resolve(__dirname, 'client/dist');
@@ -37,9 +39,12 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {
-            loader: 'style-loader'
-          },
+          // Devmode:
+          // {
+          //   loader: 'style-loader',
+          //   options: { singleton: true }
+          // },
+          { loader: MiniCssExtractPlugin.loader },
           {
             loader: 'css-loader',
             options: {
@@ -62,11 +67,33 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    minimizer: [
+      // All css in one file
+      new OptimizeCssAssetsPlugin({
+        assetNameRegExp: /\.css$/g,
+        cssProcessor: require('cssnano'),
+        cssProcessorPluginOptions: {
+          preset: ['default', { discardComments: { removeAll: true } }]
+        },
+        canPrint: true
+      }),
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true // set to true if you want JS source maps
+      })
+    ]
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './client/src/static/index.html',
       filename: 'index.html',
       minify: true
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css'
     })
   ]
 };

@@ -48,7 +48,7 @@ html {
 }
 
 .bio-photo {
-  /* margin: 20px; */
+  margin: 20px;
   /* max-height: 100%; */
   max-width: 100%;
   height: auto;
@@ -71,11 +71,75 @@ html {
   /* justify-content: flex-start; */
 }
 
-@media screen and (max-width: 375px) {
+/* Media query for mobile phones */
+@media screen and (max-width: 475px) {
+  /* Bio */
+  .bio-info {
+    margin: 0 auto;
+    padding: 5% 15% 5% 15%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #f8b500;
+    /* visualizer */
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }
+
+  .bio-photo {
+    border-top: 20px;
+    border-bottom: 20px;
+    /* visualizer */
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }
+
+  .bio-aboutme {
+    max-width: unset;
+    padding: unset;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* visualizer */
+    outline: 5px solid blue;
+    border: 5px solid pink;
+  }
+
+  .bio-aboutme h1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    /* visualizer */
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }
+
   .bio-paragraph {
+    min-width: unset;
+    text-align: center;
+    /* visualizer */
+    outline: 5px solid greenyellow;
+    border: 5px solid pink;
+  }
+  /* .bio-paragraph {
+    
     width: 300px;
     text-align: center;
-    margin-left: -80px;
+    
+    visualizer
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }  */
+
+  /* Skills */
+  .skills {
+    padding: 5% 20% 5% 20%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column; /* flex-direction flex-wrap */
+    align-items: baseline; /* cross axis */
+    justify-content: center;
   }
 }
 
@@ -97,14 +161,19 @@ html {
   width: 100%;
 }
 
-.skills-frontend {
+.skills-frontend,
+.skills-backend,
+.skills-testing,
+.skills-deployment,
+.skills-development,
+.skills-design {
   min-width: 33.3%;
   text-align: center;
   list-style-position: inside;
   padding-left: 0%;
 }
 
-.skills-backend {
+/* .skills-backend {
   min-width: 33.3%;
   text-align: center;
   list-style-position: inside;
@@ -137,7 +206,7 @@ html {
   text-align: center;
   list-style-position: inside;
   padding-left: 0%;
-}
+} */
 
 /********************
   Projects Styling

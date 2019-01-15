@@ -65,9 +65,7 @@ class App extends Component {
           <h1>Software Engineer</h1>
         </div>
         <section className={style.bioInfo} id="bioInfo">
-          <div>
-            <img className={style.bioPhoto} src={profilePhoto} />
-          </div>
+          <img className={style.bioPhoto} src={profilePhoto} />
           <div className={style.bioAboutme}>
             <h1>About me:</h1>
             <p className={style.bioParagraph}>
