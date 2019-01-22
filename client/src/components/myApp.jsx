@@ -69,8 +69,8 @@ class App extends Component {
           </a>
         </nav>
         <div className={style.heading}>
-          <h3>Paolo Razon</h3>
-          <h1>Software Engineer</h1>
+          <h1>Paolo Razon</h1>
+          <h3>Software Engineer</h3>
         </div>
         <section className={style.bioInfo} id="bioInfo">
           <img className={style.bioPhoto} src={profilePhoto} />
@@ -174,29 +174,66 @@ class App extends Component {
           </div>
         </section>
         <section className={style.experience}>
-          <h1>Experience</h1>
+          <h1 className={style.experienceHeader}>Experience</h1>
           <div>
             <h3>MID Makers</h3>
+            <ul>
+              <li>
+                Designed a responsive React-Native app that renders user data
+                that is fetched from a cloud-based database.
+              </li>
+              <li>
+                Established server-side authentication using Node, Passport, and
+                Bcrypt to hash passwords.
+              </li>
+            </ul>
           </div>
           <div>
             <h3>Trilogy</h3>
+            <ul>
+              <li>
+                Provided curriculum support for HTML5, CSS3, JavaScript, jQuery,
+                Bootstrap, Node.js, Express.js, React, Heroku, Authentication,
+                MongoDB, MySQL, Java, and Git.
+              </li>
+            </ul>
           </div>
           <div>
             <h3>Metro Remittance</h3>
+            <ul>
+              <li>
+                Managed accounting records for all financial transactions and
+                made sure that they are compliant to the federal, state, and
+                Philippine laws.
+              </li>
+              <li>
+                Generated budget and forecast quarterly and this is presented to
+                the management team.
+              </li>
+            </ul>
           </div>
           <div>
             <h3>Universal Robina Corporation</h3>
+            <ul>
+              <li>Lead a team of 20 salesmen and warehouse personnel.</li>
+              <li>Handled around $2M of monthly sales.</li>
+              <li>Created trade marketing programs to boost sales.</li>
+            </ul>
           </div>
         </section>
         <section className={style.education}>
           <h1>Education</h1>
           <ul>
             <li>Hack Reactor</li>
-            <li>De La Salle Univeristy</li>
+            <li>De La Salle University</li>
           </ul>
         </section>
         <section className={style.contactInfo} id="contactInfo">
           <h1>Get in touch</h1>
+          <div>Los Angeles</div>
+          <div>plgrazon@gmail.com</div>
+          <div>github.com/plgrazon</div>
+          <div>linkedin.com/in/paolo-razon</div>
         </section>
       </div>
     );

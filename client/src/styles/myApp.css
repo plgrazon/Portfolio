@@ -9,6 +9,7 @@ html {
   /* max-width: 960px; */
   margin: 0 auto;
   border: 20px;
+  font-size: 18px;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   color: #323b49;
 }
@@ -261,6 +262,8 @@ html {
 
 .experience {
   padding: 5% 20% 5% 20%;
+  display: flex;
+  flex-flow: column wrap;
   text-align: center;
   list-style-position: inside;
 }
@@ -275,6 +278,8 @@ html {
 
 .education {
   padding: 5% 20% 5% 20%;
+  background: #f2f2f2;
+
   text-align: center;
   list-style-position: inside;
 }
@@ -287,6 +292,10 @@ html {
   Contact Styling
 ********************/
 
-.contactInfo {
-  text-align: center;
+.contact-info {
+  padding: 5% 20% 5% 20%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
