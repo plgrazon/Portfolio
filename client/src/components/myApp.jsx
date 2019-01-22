@@ -1,6 +1,10 @@
 import style from '../styles/myApp.css';
 import React, { Component } from 'react';
 
+// Icon
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// Images
 import profilePhoto from '../static/profilePhotoSquare.jpg';
 import abayPhoto from '../static/abayPhoto.png';
 import welpPhoto from '../static/welpPhoto.png';
@@ -223,17 +227,33 @@ class App extends Component {
         </section>
         <section className={style.education}>
           <h1>Education</h1>
-          <ul>
-            <li>Hack Reactor</li>
-            <li>De La Salle University</li>
-          </ul>
+          <div>
+            <h3>Hack Reactor</h3>
+            <p>Software Engineering Immersive</p>
+          </div>
+          <div>
+            <h3>De La Salle University</h3>
+            <p>Bachelor of Science in Business Management</p>
+          </div>
         </section>
         <section className={style.contactInfo} id="contactInfo">
           <h1>Get in touch</h1>
-          <div>Los Angeles</div>
-          <div>plgrazon@gmail.com</div>
-          <div>github.com/plgrazon</div>
-          <div>linkedin.com/in/paolo-razon</div>
+          <div>
+            <FontAwesomeIcon icon="map-marker" />
+            <p> Los Angeles</p>
+          </div>
+          <div>
+            <FontAwesomeIcon icon="envelope" />
+            <p> plgrazon@gmail.com</p>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={['fab', 'github']} />
+            <p> github.com/plgrazon</p>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={['fab', 'linkedin']} />
+            <p> linkedin.com/in/paolo-razon</p>
+          </div>
         </section>
       </div>
     );

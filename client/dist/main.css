@@ -1,1 +1,313 @@
-html{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background:#f7f7f7}body{margin:0 auto;border:20px;font-size:18px;font-family:Roboto,Helvetica,Arial,sans-serif;color:#323b49}.myApp__navBar--23bRz{display:flex;justify-content:center;align-content:center;padding:20px}.myApp__navLink--3u7d5{padding:5px}.myApp__heading--2moet{font-size:30px;text-align:center}.myApp__bio-info--3LoRs{margin:0 auto;padding:5% 15%;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;background:#f8b500}.myApp__bio-photo--1aeuq{margin:20px;max-width:100%;height:auto;width:auto;border-radius:50%}.myApp__bio-aboutme--1wgS7{padding:20px;max-width:50%}.myApp__bio-paragraph--14Tkr{min-width:200px;font-size:18px}@media screen and (max-width:475px){.myApp__bio-info--3LoRs{margin:0 auto;padding:5% 15%;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;background:#f8b500}.myApp__bio-info--3LoRs,.myApp__bio-photo--1aeuq{outline:5px solid red;border:5px solid pink}.myApp__bio-aboutme--1wgS7{max-width:unset;padding:unset;display:flex;flex-direction:column;align-content:center;outline:5px solid #00f;border:5px solid pink}.myApp__bio-aboutme--1wgS7 h1{text-align:center;margin:0 auto;width:80%;outline:5px solid red;border:5px solid pink}.myApp__bio-paragraph--14Tkr{min-width:unset;text-align:center;outline:5px solid #adff2f;border:5px solid pink}.myApp__skills--25IyK{padding:5% 20%;min-width:200px;display:flex;flex-direction:column;align-items:baseline;justify-content:center}}.myApp__skills--25IyK{padding:5% 20%;min-width:200px;display:flex;flex-flow:row wrap;align-items:baseline;justify-content:center}.myApp__skills-header--3oobK{text-align:center;width:100%}.myApp__skills-backend--3YMZR,.myApp__skills-deployment--1TY-Y,.myApp__skills-design--3CUCm,.myApp__skills-development--2QhnX,.myApp__skills-frontend--1lxns,.myApp__skills-testing--3Pslw{min-width:33.3%;text-align:center;list-style-position:inside;padding-left:0}.myApp__projects--1HsfL{padding:5% 15%;display:flex;flex-flow:column wrap;justify-content:center;background:#f2f2f2}.myApp__abay-project--j7tS-,.myApp__projects-header--2Le_D,.myApp__welp-project--3SMhu{text-align:center}.myApp__abay-photo--IwAE6{max-width:100%;height:auto;width:auto}.myApp__abay-skills--2un8T{padding:10px}.myApp__abay-paragraph--3vr34{padding:0 10% 20px}.myApp__welp-photo--RabsZ{max-width:100%;height:auto;width:auto}.myApp__welp-skills--2mwpT{padding:10px}.myApp__welp-paragraph--r7w7i{padding:0 10% 20px}.myApp__experience--3TUWK{padding:5% 20%;display:flex;flex-flow:column wrap;text-align:center;list-style-position:inside}.myApp__experience--3TUWK ul{padding-left:0}.myApp__education--A4zRg{padding:5% 20%;background:#f2f2f2;text-align:center;list-style-position:inside}.myApp__education--A4zRg ul{padding-left:0}.myApp__contact-info--379Jy{padding:5% 20%;display:flex;flex-flow:column wrap;align-items:center;justify-content:center}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #f7f7f7;
+}
+
+body {
+  /* max-width: 960px; */
+  margin: 0 auto;
+  border: 20px;
+  font-size: 18px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: #323b49;
+}
+
+/********************
+  Nav Styling
+********************/
+
+.myApp__navBar--23bRz {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.myApp__navLink--3u7d5 {
+  padding: 5px;
+}
+
+/********************
+  Bio Styling
+********************/
+
+.myApp__heading--2moet {
+  font-size: 30px;
+  text-align: center;
+}
+
+.myApp__bio-info--3LoRs {
+  margin: 0 auto;
+  padding: 5% 15% 5% 15%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: #f8b500;
+}
+
+.myApp__bio-photo--1aeuq {
+  margin: 20px;
+  /* max-height: 100%; */
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+}
+
+.myApp__bio-aboutme--1wgS7 {
+  /* width: 30%; */
+  padding: 20px;
+  /* margin-left: 25px; */
+  max-width: 50%;
+}
+
+.myApp__bio-paragraph--14Tkr {
+  /* padding: 0; */
+  min-width: 200px;
+  /* width: 500px; */
+  font-size: 18px;
+  /* justify-content: flex-start; */
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 475px) {
+  /* Bio */
+  .myApp__bio-info--3LoRs {
+    margin: 0 auto;
+    padding: 5% 15% 5% 15%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #f8b500;
+    /* visualizer */
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }
+
+  .myApp__bio-photo--1aeuq {
+    border-top: 20px;
+    border-bottom: 20px;
+    /* visualizer */
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }
+
+  .myApp__bio-aboutme--1wgS7 {
+    max-width: unset;
+    padding: unset;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* visualizer */
+    outline: 5px solid blue;
+    border: 5px solid pink;
+  }
+
+  .myApp__bio-aboutme--1wgS7 h1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    /* visualizer */
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }
+
+  .myApp__bio-paragraph--14Tkr {
+    min-width: unset;
+    text-align: center;
+    /* visualizer */
+    outline: 5px solid greenyellow;
+    border: 5px solid pink;
+  }
+  /* .bio-paragraph {
+    
+    width: 300px;
+    text-align: center;
+    
+    visualizer
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }  */
+
+  /* Skills */
+  .myApp__skills--25IyK {
+    padding: 5% 20% 5% 20%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column; /* flex-direction flex-wrap */
+    align-items: baseline; /* cross axis */
+    justify-content: center;
+  }
+}
+
+/********************
+  Skills Styling
+********************/
+
+.myApp__skills--25IyK {
+  padding: 5% 20% 5% 20%;
+  min-width: 200px;
+  display: flex;
+  flex-flow: row wrap; /* flex-direction flex-wrap */
+  align-items: baseline; /* cross axis */
+  justify-content: center;
+}
+
+.myApp__skills-header--3oobK {
+  text-align: center;
+  width: 100%;
+}
+
+.myApp__skills-frontend--1lxns,
+.myApp__skills-backend--3YMZR,
+.myApp__skills-testing--3Pslw,
+.myApp__skills-deployment--1TY-Y,
+.myApp__skills-development--2QhnX,
+.myApp__skills-design--3CUCm {
+  min-width: 33.3%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
+}
+
+/* .skills-backend {
+  min-width: 33.3%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
+}
+
+.skills-testing {
+  min-width: 33.3%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
+}
+
+.skills-deployment {
+  min-width: 33.3%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
+}
+
+.skills-development {
+  min-width: 33.3%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
+}
+
+.skills-design {
+  min-width: 33.3%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
+} */
+
+/********************
+  Projects Styling
+********************/
+
+.myApp__projects--1HsfL {
+  padding: 5% 15%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+.myApp__projects-header--2Le_D,
+.myApp__abay-project--j7tS-,
+.myApp__welp-project--3SMhu {
+  text-align: center;
+}
+
+.myApp__abay-photo--IwAE6 {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.myApp__abay-skills--2un8T {
+  padding: 10px;
+}
+
+.myApp__abay-paragraph--3vr34 {
+  padding: 0 10% 20px 10%;
+}
+
+.myApp__welp-photo--RabsZ {
+  max-width: 100%;
+  /* max-height: 100%; */
+  height: auto;
+  width: auto;
+}
+
+.myApp__welp-skills--2mwpT {
+  padding: 10px;
+}
+
+.myApp__welp-paragraph--r7w7i {
+  padding: 0 10% 20px 10%;
+}
+
+/********************
+  Experience Styling
+********************/
+
+.myApp__experience--3TUWK {
+  padding: 5% 20% 5% 20%;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.myApp__experience--3TUWK ul {
+  padding-left: 0%;
+}
+
+/********************
+  Education Styling
+********************/
+
+.myApp__education--A4zRg {
+  padding: 5% 20% 5% 20%;
+  display: flex;
+  flex-flow: column wrap;
+  background: #f2f2f2;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.myApp__education--A4zRg ul {
+  padding-left: 0%;
+}
+
+/********************
+  Contact Styling
+********************/
+
+.myApp__contact-info--379Jy {
+  padding: 5% 20% 5% 20%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.myApp__contact-info--379Jy h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.myApp__contact-info--379Jy div {
+  width: 50%;
+  text-align: center;
+}
+

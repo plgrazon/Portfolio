@@ -278,8 +278,9 @@ html {
 
 .education {
   padding: 5% 20% 5% 20%;
+  display: flex;
+  flex-flow: column wrap;
   background: #f2f2f2;
-
   text-align: center;
   list-style-position: inside;
 }
@@ -295,7 +296,17 @@ html {
 .contact-info {
   padding: 5% 20% 5% 20%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+}
+
+.contact-info h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-info div {
+  width: 50%;
+  text-align: center;
 }
