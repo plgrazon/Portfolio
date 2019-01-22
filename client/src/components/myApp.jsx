@@ -6,11 +6,19 @@ import abayPhoto from '../static/abayPhoto.png';
 import welpPhoto from '../static/welpPhoto.png';
 import testingPhoto from '../static/testing.png';
 
+const photos = { profilePhoto, abayPhoto, welpPhoto, testingPhoto };
 class App extends Component {
   constructor() {
     super();
 
     this.state = {};
+  }
+
+  componentWillMount() {
+    for (let src in photos) {
+      const img = new Image();
+      img.src = photos[src];
+    }
   }
 
   render() {
@@ -167,6 +175,9 @@ class App extends Component {
         </section>
         <section className={style.experience}>
           <h1>Experience</h1>
+          <div>
+            <h3>MID Makers</h3>
+          </div>
           <div>
             <h3>Trilogy</h3>
           </div>

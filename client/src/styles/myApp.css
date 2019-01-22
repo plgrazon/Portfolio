@@ -217,7 +217,7 @@ html {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  background: #f3f3f3;
+  background: #f2f2f2;
 }
 
 .projects-header,
