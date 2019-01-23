@@ -1,0 +1,27 @@
+/********************
+  Contact Styling
+********************/
+
+.contact-info {
+  padding: 5% 15% 5% 15%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info h1 {
+  margin: 1.34em;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 33.3%;
+}
+
+@media screen and (max-width: 475px) {
+}

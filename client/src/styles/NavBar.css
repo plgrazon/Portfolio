@@ -1,0 +1,17 @@
+/********************
+  Nav Styling
+********************/
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.navLink {
+  padding: 5px;
+}
+
+@media screen and (max-width: 475px) {
+}

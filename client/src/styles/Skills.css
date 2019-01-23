@@ -1,0 +1,43 @@
+/********************
+  Skills Styling
+********************/
+
+.skills {
+  padding: 5% 15% 5% 15%;
+  min-width: 200px;
+  display: flex;
+  flex-flow: row wrap; /* flex-direction flex-wrap */
+  align-items: baseline; /* cross axis */
+  justify-content: center;
+}
+
+.skills-header {
+  text-align: center;
+  width: 100%;
+}
+
+.skills-frontend,
+.skills-backend,
+.skills-testing,
+.skills-deployment,
+.skills-development,
+.skills-design {
+  min-width: 33.3%;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0%;
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 475px) {
+  /* Skills */
+  .skills {
+    padding: 5% 10% 5% 10%;
+    min-width: unset;
+    display: flex;
+    flex-flow: column wrap; /* flex-direction flex-wrap */
+    align-items: center; /* cross axis */
+    text-align: center;
+    justify-content: center;
+  }
+}

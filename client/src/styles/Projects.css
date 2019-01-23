@@ -1,0 +1,65 @@
+/********************
+  Projects Styling
+********************/
+
+.projects {
+  padding: 5% 15%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+.projects-header,
+.abay-project,
+.welp-project {
+  text-align: center;
+}
+
+.abay-photo {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.abay-skills {
+  padding: 10px;
+}
+
+.abay-paragraph {
+  padding: 0 10% 20px 10%;
+}
+
+.welp-photo {
+  max-width: 100%;
+  /* max-height: 100%; */
+  height: auto;
+  width: auto;
+}
+
+.welp-skills {
+  padding: 10px;
+}
+
+.welp-paragraph {
+  padding: 0 10% 20px 10%;
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 475px) {
+  .projects {
+    padding: 5% 10%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background: #f2f2f2;
+  }
+
+  .abay-paragraph {
+    padding: 20px 0;
+  }
+
+  .welp-paragraph {
+    padding: 20px 0;
+  }
+}

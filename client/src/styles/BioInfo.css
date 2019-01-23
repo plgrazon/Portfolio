@@ -1,0 +1,104 @@
+/********************
+  Bio Styling
+********************/
+
+.heading {
+  font-size: 30px;
+  text-align: center;
+}
+
+.bio-info {
+  margin: 0 auto;
+  padding: 5% 15% 5% 15%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: #f8b500;
+}
+
+.bio-photo {
+  margin: 20px;
+  /* max-height: 100%; */
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+}
+
+.bio-aboutme {
+  /* width: 30%; */
+  padding: 20px;
+  /* margin-left: 25px; */
+  max-width: 50%;
+}
+
+.bio-paragraph {
+  /* padding: 0; */
+  min-width: 200px;
+  /* width: 500px; */
+  /* font-size: 18px; */
+  /* justify-content: flex-start; */
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 475px) {
+  /* Bio */
+  .bio-info {
+    margin: 0 auto;
+    padding: 5% 10% 5% 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #f8b500;
+    /* visualizer */
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }
+
+  .bio-photo {
+    border-top: 20px;
+    border-bottom: 20px;
+    /* visualizer */
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }
+
+  .bio-aboutme {
+    max-width: unset;
+    padding: unset;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* visualizer */
+    outline: 5px solid blue;
+    border: 5px solid pink;
+  }
+
+  .bio-aboutme h1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    /* visualizer */
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }
+
+  .bio-paragraph {
+    min-width: unset;
+    text-align: center;
+    /* visualizer */
+    outline: 5px solid greenyellow;
+    border: 5px solid pink;
+  }
+  /* .bio-paragraph {
+    
+    width: 300px;
+    text-align: center;
+    
+    visualizer
+    outline: 5px solid red;
+    border: 5px solid pink;
+  }  */
+}
