@@ -77,7 +77,7 @@ body {
 ********************/
 
 .myApp__skills--25IyK {
-  padding: 5% 20% 5% 20%;
+  padding: 5% 15% 5% 15%;
   min-width: 200px;
   display: flex;
   flex-flow: row wrap; /* flex-direction flex-wrap */
@@ -154,7 +154,7 @@ body {
 ********************/
 
 .myApp__experience--3TUWK {
-  padding: 5% 20% 5% 20%;
+  padding: 5% 15% 5% 15%;
   display: flex;
   flex-flow: column wrap;
   text-align: center;
@@ -170,12 +170,11 @@ body {
 ********************/
 
 .myApp__education--A4zRg {
-  padding: 5% 20% 5% 20%;
+  padding: 5% 15% 5% 15%;
   display: flex;
   flex-flow: column wrap;
   background: #f2f2f2;
   text-align: center;
-  list-style-position: inside;
 }
 
 .myApp__education--A4zRg ul {
@@ -187,7 +186,7 @@ body {
 ********************/
 
 .myApp__contact-info--379Jy {
-  padding: 5% 20% 5% 20%;
+  padding: 5% 15% 5% 15%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -207,10 +206,19 @@ body {
 
 /* Media query for mobile phones */
 @media screen and (max-width: 475px) {
+  body {
+    /* max-width: 960px; */
+    margin: 0 auto;
+    border: 10px;
+    font-size: 18px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #323b49;
+  }
+
   /* Bio */
   .myApp__bio-info--3LoRs {
     margin: 0 auto;
-    padding: 5% 15% 5% 15%;
+    padding: 5% 10% 5% 10%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -268,13 +276,39 @@ body {
 
   /* Skills */
   .myApp__skills--25IyK {
-    padding: 5% 20% 5% 20%;
+    padding: 5% 10% 5% 10%;
     min-width: unset;
     display: flex;
     flex-flow: column wrap; /* flex-direction flex-wrap */
     align-items: center; /* cross axis */
     text-align: center;
     justify-content: center;
+  }
+
+  /* Projects */
+  .myApp__projects--1HsfL {
+    padding: 5% 10%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background: #f2f2f2;
+  }
+
+  .myApp__abay-paragraph--3vr34 {
+    padding: 20px 0;
+  }
+  .myApp__welp-paragraph--r7w7i {
+    padding: 20px 0;
+  }
+
+  /* Education */
+  .myApp__education--A4zRg {
+    padding: 5% 10% 5% 10%;
+    display: flex;
+    flex-flow: column wrap;
+    background: #f2f2f2;
+    text-align: center;
+    list-style-position: inside;
   }
 }
 

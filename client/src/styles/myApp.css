@@ -77,7 +77,7 @@ html {
 ********************/
 
 .skills {
-  padding: 5% 20% 5% 20%;
+  padding: 5% 15% 5% 15%;
   min-width: 200px;
   display: flex;
   flex-flow: row wrap; /* flex-direction flex-wrap */
@@ -154,7 +154,7 @@ html {
 ********************/
 
 .experience {
-  padding: 5% 20% 5% 20%;
+  padding: 5% 15% 5% 15%;
   display: flex;
   flex-flow: column wrap;
   text-align: center;
@@ -170,12 +170,11 @@ html {
 ********************/
 
 .education {
-  padding: 5% 20% 5% 20%;
+  padding: 5% 15% 5% 15%;
   display: flex;
   flex-flow: column wrap;
   background: #f2f2f2;
   text-align: center;
-  list-style-position: inside;
 }
 
 .education ul {
@@ -187,7 +186,7 @@ html {
 ********************/
 
 .contact-info {
-  padding: 5% 20% 5% 20%;
+  padding: 5% 15% 5% 15%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -207,10 +206,19 @@ html {
 
 /* Media query for mobile phones */
 @media screen and (max-width: 475px) {
+  :global body {
+    /* max-width: 960px; */
+    margin: 0 auto;
+    border: 10px;
+    font-size: 18px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #323b49;
+  }
+
   /* Bio */
   .bio-info {
     margin: 0 auto;
-    padding: 5% 15% 5% 15%;
+    padding: 5% 10% 5% 10%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -268,12 +276,38 @@ html {
 
   /* Skills */
   .skills {
-    padding: 5% 20% 5% 20%;
+    padding: 5% 10% 5% 10%;
     min-width: unset;
     display: flex;
     flex-flow: column wrap; /* flex-direction flex-wrap */
     align-items: center; /* cross axis */
     text-align: center;
     justify-content: center;
+  }
+
+  /* Projects */
+  .projects {
+    padding: 5% 10%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background: #f2f2f2;
+  }
+
+  .abay-paragraph {
+    padding: 20px 0;
+  }
+  .welp-paragraph {
+    padding: 20px 0;
+  }
+
+  /* Education */
+  .education {
+    padding: 5% 10% 5% 10%;
+    display: flex;
+    flex-flow: column wrap;
+    background: #f2f2f2;
+    text-align: center;
+    list-style-position: inside;
   }
 }
