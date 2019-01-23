@@ -239,19 +239,15 @@ class App extends Component {
         <section className={style.contactInfo} id="contactInfo">
           <h1>Get in touch</h1>
           <div>
-            <FontAwesomeIcon icon="map-marker" />
-            <p> Los Angeles</p>
-          </div>
-          <div>
-            <FontAwesomeIcon icon="envelope" />
+            <FontAwesomeIcon icon="envelope" size="lg" />
             <p> plgrazon@gmail.com</p>
           </div>
           <div>
-            <FontAwesomeIcon icon={['fab', 'github']} />
+            <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
             <p> github.com/plgrazon</p>
           </div>
           <div>
-            <FontAwesomeIcon icon={['fab', 'linkedin']} />
+            <FontAwesomeIcon icon={['fab', 'linkedin']} size="lg" />
             <p> linkedin.com/in/paolo-razon</p>
           </div>
         </section>
