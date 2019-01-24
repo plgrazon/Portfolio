@@ -88,6 +88,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './client/src/static/index.html',
+      favicon: './client/src/static/favico.ico',
       filename: 'index.html',
       minify: true
     }),
