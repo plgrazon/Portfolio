@@ -530,7 +530,8 @@ body {
 
 .Projects__projects-header--9Gg0E,
 .Projects__abay-project--1N8QD,
-.Projects__welp-project--2pWQb {
+.Projects__welp-project--2pWQb,
+.Projects__portfolio-project--2oeKV {
   text-align: center;
 }
 
@@ -550,7 +551,6 @@ body {
 
 .Projects__welp-photo--nxCx5 {
   max-width: 100%;
-  /* max-height: 100%; */
   height: auto;
   width: auto;
 }
@@ -560,6 +560,20 @@ body {
 }
 
 .Projects__welp-paragraph--1EHlg {
+  padding: 0 10% 20px 10%;
+}
+
+.Projects__portfolio-photo--1CFgJ {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.Projects__portoflio-skills--Op91v {
+  padding: 10px;
+}
+
+.Projects__portoflio-paragraph--3VbOp {
   padding: 0 10% 20px 10%;
 }
 
@@ -578,6 +592,10 @@ body {
   }
 
   .Projects__welp-paragraph--1EHlg {
+    padding: 20px 0;
+  }
+
+  .Projects__portfolio-paragraph--3YmaB {
     padding: 20px 0;
   }
 }

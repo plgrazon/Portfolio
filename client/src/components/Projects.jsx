@@ -1,7 +1,7 @@
 import style from '../styles/Projects.css';
 import React, { Component } from 'react';
 
-const Projects = ({ abayPhoto, welpPhoto }) => {
+const Projects = ({ abayPhoto, welpPhoto, portfolioPhoto }) => {
   return (
     <section className={style.projects} id="projects">
       <h1 className={style.projectsHeader}>Projects</h1>
@@ -33,6 +33,15 @@ const Projects = ({ abayPhoto, welpPhoto }) => {
           the implentation of a load balancer and multiple instances. Server
           routes and database queries were optimized through pooling, indexing,
           and caching.
+        </p>
+      </div>
+      <div className={style.portfolioProject}>
+        <h3>Portfolio</h3>
+        <img className={style.portfolioPhoto} src={portfolioPhoto} />
+        <p className={style.portfolioSkills}>React | CSS | Webpack | AWS</p>
+        <p className={style.portfolioParagraph}>
+          Built my portfolio using react and it is hosted on AWS. My static
+          files are in a S3 bucket which then are being served using Cloudfront.
         </p>
       </div>
     </section>
