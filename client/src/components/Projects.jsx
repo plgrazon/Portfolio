@@ -38,10 +38,13 @@ const Projects = ({ abayPhoto, welpPhoto, portfolioPhoto }) => {
       <div className={style.portfolioProject}>
         <h3>Portfolio</h3>
         <img className={style.portfolioPhoto} src={portfolioPhoto} />
-        <p className={style.portfolioSkills}>React | CSS | Webpack | AWS</p>
+        <p className={style.portfolioSkills}>
+          React | CSS | Webpack | Grunt | AWS
+        </p>
         <p className={style.portfolioParagraph}>
           Built my portfolio using react and it is hosted on AWS. My static
           files are in a S3 bucket which then are being served using Cloudfront.
+          File uploading is automated with the use of Grunt.
         </p>
       </div>
     </section>
