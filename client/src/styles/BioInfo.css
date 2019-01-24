@@ -7,6 +7,14 @@
   text-align: center;
 }
 
+.heading h1 {
+  margin-bottom: 0;
+}
+
+.heading h3 {
+  margin-top: 0.335em;
+}
+
 .bio-info {
   margin: 0 auto;
   padding: 5% 15% 5% 15%;
@@ -43,6 +51,11 @@
 
 /* Media query for mobile phones */
 @media screen and (max-width: 475px) {
+  /* Heading */
+  .heading h1 {
+    margin-top: 0.335em;
+  }
+
   /* Bio */
   .bio-info {
     margin: 0 auto;

@@ -13,7 +13,7 @@ const Skills = () => {
   let backEndSkills = [
     'Node.js',
     'Express',
-    'PostgresSQL',
+    'PostgreSQL',
     'MongoDB',
     'MySQL',
     'RESTful API Development'

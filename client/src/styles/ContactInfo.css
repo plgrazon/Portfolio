@@ -15,15 +15,30 @@
 .contact-links {
   display: flex;
   flex-flow: row wrap;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
   justify-content: center;
 }
 
-.contact-icon {
+.contact-link {
   padding: 0.67em 5% 0.67em 5%;
   text-align: center;
   width: 10%;
+}
+
+.contact-icon {
+  color: #323b49;
+}
+
+.contact-icon:hover {
+  color: lightgray;
+}
+
+.contact-icon:active {
+  color: #323b49;
+}
+
+.contact-icon:visited {
+  color: #323b49;
 }
 
 @media screen and (max-width: 475px) {
