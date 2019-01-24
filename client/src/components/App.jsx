@@ -17,9 +17,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import profilePhoto from '../static/profilePhotoSquare.jpg';
 import abayPhoto from '../static/abayPhoto.png';
 import welpPhoto from '../static/welpPhoto.png';
-import testingPhoto from '../static/testing.png';
 
-const photos = { profilePhoto, abayPhoto, welpPhoto, testingPhoto };
+const photos = { profilePhoto, abayPhoto, welpPhoto };
 class App extends Component {
   constructor() {
     super();

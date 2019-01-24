@@ -44,6 +44,7 @@ module.exports = {
           //   loader: 'style-loader',
           //   options: { singleton: true }
           // },
+          // Production:
           { loader: MiniCssExtractPlugin.loader },
           {
             loader: 'css-loader',
