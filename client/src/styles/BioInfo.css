@@ -46,23 +46,24 @@
   /* Bio */
   .bio-info {
     margin: 0 auto;
-    padding: 5% 10% 5% 10%;
+    padding: 5% 5% 5% 5%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     background: #f8b500;
     /* visualizer */
-    outline: 5px solid red;
-    border: 5px solid pink;
+    /* outline: 5px solid red;
+    border: 5px solid pink; */
   }
 
   .bio-photo {
+    max-width: 80%;
     border-top: 20px;
     border-bottom: 20px;
     /* visualizer */
-    outline: 5px solid red;
-    border: 5px solid pink;
+    /* outline: 5px solid red;
+    border: 5px solid pink; */
   }
 
   .bio-aboutme {
@@ -72,8 +73,8 @@
     flex-direction: column;
     align-content: center;
     /* visualizer */
-    outline: 5px solid blue;
-    border: 5px solid pink;
+    /* outline: 5px solid blue;
+    border: 5px solid pink; */
   }
 
   .bio-aboutme h1 {
@@ -81,16 +82,16 @@
     margin: 0 auto;
     width: 80%;
     /* visualizer */
-    outline: 5px solid red;
-    border: 5px solid pink;
+    /* outline: 5px solid red;
+    border: 5px solid pink; */
   }
 
   .bio-paragraph {
     min-width: unset;
     text-align: center;
     /* visualizer */
-    outline: 5px solid greenyellow;
-    border: 5px solid pink;
+    /* outline: 5px solid greenyellow;
+    border: 5px solid pink; */
   }
   /* .bio-paragraph {
     

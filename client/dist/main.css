@@ -381,23 +381,24 @@ body {
   /* Bio */
   .BioInfo__bio-info--3bz9B {
     margin: 0 auto;
-    padding: 5% 10% 5% 10%;
+    padding: 5% 5% 5% 5%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     background: #f8b500;
     /* visualizer */
-    outline: 5px solid red;
-    border: 5px solid pink;
+    /* outline: 5px solid red;
+    border: 5px solid pink; */
   }
 
   .BioInfo__bio-photo--1C5YB {
+    max-width: 80%;
     border-top: 20px;
     border-bottom: 20px;
     /* visualizer */
-    outline: 5px solid red;
-    border: 5px solid pink;
+    /* outline: 5px solid red;
+    border: 5px solid pink; */
   }
 
   .BioInfo__bio-aboutme--3JV3P {
@@ -407,8 +408,8 @@ body {
     flex-direction: column;
     align-content: center;
     /* visualizer */
-    outline: 5px solid blue;
-    border: 5px solid pink;
+    /* outline: 5px solid blue;
+    border: 5px solid pink; */
   }
 
   .BioInfo__bio-aboutme--3JV3P h1 {
@@ -416,16 +417,16 @@ body {
     margin: 0 auto;
     width: 80%;
     /* visualizer */
-    outline: 5px solid red;
-    border: 5px solid pink;
+    /* outline: 5px solid red;
+    border: 5px solid pink; */
   }
 
   .BioInfo__bio-paragraph--3knT3 {
     min-width: unset;
     text-align: center;
     /* visualizer */
-    outline: 5px solid greenyellow;
-    border: 5px solid pink;
+    /* outline: 5px solid greenyellow;
+    border: 5px solid pink; */
   }
   /* .bio-paragraph {
     
@@ -472,7 +473,7 @@ body {
 @media screen and (max-width: 475px) {
   /* Skills */
   .Skills__skills--1egmn {
-    padding: 5% 10% 5% 10%;
+    padding: 5% 5% 5% 5%;
     min-width: unset;
     display: flex;
     flex-flow: column wrap; /* flex-direction flex-wrap */
@@ -532,7 +533,7 @@ body {
 /* Media query for mobile phones */
 @media screen and (max-width: 475px) {
   .Projects__projects--2bI1u {
-    padding: 5% 10%;
+    padding: 5% 5%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -567,7 +568,7 @@ body {
 /* Media query for mobile phones */
 @media screen and (max-width: 475px) {
   .Experience__experience--1LYmn {
-    padding: 5% 10% 5% 10%;
+    padding: 5% 5% 5% 5%;
     display: flex;
     flex-flow: column wrap;
     text-align: center;
@@ -594,7 +595,7 @@ body {
 @media screen and (max-width: 475px) {
   /* Education */
   .Education__education--2E8XK {
-    padding: 5% 10% 5% 10%;
+    padding: 5% 5% 5% 5%;
     display: flex;
     flex-flow: column wrap;
     background: #f2f2f2;
@@ -609,32 +610,29 @@ body {
 
 .ContactInfo__contact-info--n-iFd {
   padding: 5% 15% 5% 15%;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .ContactInfo__contact-info--n-iFd h1 {
   margin: 0.67em;
-  width: 100%;
   text-align: center;
+  /* width: 100%; */
 }
 
-.ContactInfo__contact-info--n-iFd div {
-  padding: 15px 10% 15px 10%;
+.ContactInfo__contact-links--2jwBg {
+  display: flex;
+  flex-flow: row wrap;
+  /* align-items: center;
+  justify-content: center; */
+  justify-content: center;
+}
+
+.ContactInfo__contact-icon--1JUtt {
+  padding: 0.67em 5% 0.67em 5%;
   text-align: center;
-  max-width: 33.3%;
+  width: 10%;
 }
 
 @media screen and (max-width: 475px) {
-  .ContactInfo__contact-info--n-iFd {
-    padding: 5% 10% 5% 10%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

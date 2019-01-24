@@ -4,30 +4,27 @@
 
 .contact-info {
   padding: 5% 15% 5% 15%;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .contact-info h1 {
   margin: 0.67em;
-  width: 100%;
   text-align: center;
+  /* width: 100%; */
 }
 
-.contact-info div {
-  padding: 15px 10% 15px 10%;
+.contact-links {
+  display: flex;
+  flex-flow: row wrap;
+  /* align-items: center;
+  justify-content: center; */
+  justify-content: center;
+}
+
+.contact-icon {
+  padding: 0.67em 5% 0.67em 5%;
   text-align: center;
-  max-width: 33.3%;
+  width: 10%;
 }
 
 @media screen and (max-width: 475px) {
-  .contact-info {
-    padding: 5% 10% 5% 10%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-  }
 }
