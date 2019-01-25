@@ -34,4 +34,7 @@
 }
 
 @media screen and (max-width: 475px) {
+  .nav-link:hover {
+    color: #323b49;
+  }
 }

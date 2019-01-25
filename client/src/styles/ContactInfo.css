@@ -42,4 +42,7 @@
 }
 
 @media screen and (max-width: 475px) {
+  .contact-icon:hover {
+    color: #323b49;
+  }
 }

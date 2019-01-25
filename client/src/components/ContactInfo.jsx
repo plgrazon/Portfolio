@@ -12,6 +12,7 @@ const ContactInfo = () => {
         <a
           className={style.contactLink}
           href="mailto:plgrazon@gmail.com"
+          rel="noopener"
           target="_blank"
         >
           <FontAwesomeIcon
@@ -24,6 +25,7 @@ const ContactInfo = () => {
         <a
           className={style.contactLink}
           href="https://github.com/plgrazon"
+          rel="noopener"
           target="_blank"
         >
           <FontAwesomeIcon
@@ -36,6 +38,7 @@ const ContactInfo = () => {
         <a
           className={style.contactLink}
           href="https://www.linkedin.com/in/paolo-razon"
+          rel="noopener"
           target="_blank"
         >
           <FontAwesomeIcon

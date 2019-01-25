@@ -41,3 +41,17 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .skills-frontend,
+  .skills-backend,
+  .skills-testing,
+  .skills-deployment,
+  .skills-development,
+  .skills-design {
+    min-width: 50%;
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0%;
+  }
+}
