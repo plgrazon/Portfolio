@@ -3,12 +3,6 @@ package-lock.json
 npm-debug.log
 .env
 bundle.js
-profilePhoto.jpg
-profilePhotoSquare.jpg
-abayPhoto.png
-welpPhoto.png
 testing.png
-logo.png
-responsiveWebsitePhoto.png
 awsConfig.js
 .vscode
