@@ -44,6 +44,7 @@ module.exports = {
           //   loader: 'style-loader',
           //   options: { singleton: true }
           // },
+          // Production:
           { loader: MiniCssExtractPlugin.loader },
           {
             loader: 'css-loader',
@@ -88,6 +89,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './client/src/static/index.html',
+      favicon: './client/src/static/favico.ico',
       filename: 'index.html',
       minify: true
     }),

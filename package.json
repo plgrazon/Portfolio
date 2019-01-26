@@ -32,6 +32,11 @@
     "cssnano": "^4.1.8",
     "file-loader": "^2.0.0",
     "gh-pages": "^2.0.1",
+    "grunt": "^1.0.3",
+    "grunt-aws": "^0.6.2",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.4",
@@ -43,12 +48,16 @@
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.12",
+    "@fortawesome/free-brands-svg-icons": "^5.6.3",
+    "@fortawesome/free-solid-svg-icons": "^5.6.3",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "helmet": "^3.15.0",
-    "mongodb": "^3.1.9",
+    "normalize.css": "^8.0.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   }

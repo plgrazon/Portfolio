@@ -1,0 +1,48 @@
+/********************
+  Contact Styling
+********************/
+
+.contact-info {
+  padding: 5% 15% 5% 15%;
+}
+
+.contact-info h1 {
+  margin: 0.67em;
+  text-align: center;
+  /* width: 100%; */
+}
+
+.contact-links {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-link {
+  padding: 0.67em 5% 0.67em 5%;
+  text-align: center;
+  width: 10%;
+}
+
+.contact-icon {
+  color: #323b49;
+}
+
+.contact-icon:hover {
+  color: lightgray;
+}
+
+.contact-icon:active {
+  color: #323b49;
+}
+
+.contact-icon:visited {
+  color: #323b49;
+}
+
+@media screen and (max-width: 475px) {
+  .contact-icon:hover {
+    color: #323b49;
+  }
+}
