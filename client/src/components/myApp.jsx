@@ -6,11 +6,19 @@ import abayPhoto from '../static/abayPhoto.png';
 import welpPhoto from '../static/welpPhoto.png';
 import testingPhoto from '../static/testing.png';
 
+const photos = { profilePhoto, abayPhoto, welpPhoto, testingPhoto };
 class App extends Component {
   constructor() {
     super();
 
     this.state = {};
+  }
+
+  componentWillMount() {
+    for (let src in photos) {
+      const img = new Image();
+      img.src = photos[src];
+    }
   }
 
   render() {
