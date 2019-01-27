@@ -19,7 +19,7 @@
   margin: 0 auto;
   padding: 5% 15% 5% 15%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
   background: #f8b500;
@@ -28,7 +28,7 @@
 .bio-photo {
   margin: 20px;
   /* max-height: 100%; */
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   width: auto;
   border-radius: 50%;
@@ -38,6 +38,7 @@
   /* width: 30%; */
   padding: 20px;
   /* margin-left: 25px; */
+
   max-width: 50%;
 }
 
